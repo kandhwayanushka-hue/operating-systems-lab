@@ -1,0 +1,106 @@
+Microsoft Windows [Version 10.0.26200.8894]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ADMIN>d:
+The system cannot find the drive specified.
+
+C:\Users\ADMIN>c:
+
+C:\Users\ADMIN>md anushka
+
+C:\Users\ADMIN>cd /   //to shift on c drive 
+
+C:\>md anushak
+
+C:\>cd anushak
+
+C:\anushak>md anushak
+
+C:\anushak>mkdir
+The syntax of the command is incorrect.
+
+C:\anushak>mkdir anushka1
+
+C:\anushak>cd..
+
+C:\>cd anushak
+
+C:\anushak>cd anushak
+
+C:\anushak\anushak>cd\
+
+C:\>cd anushak
+
+C:\anushak>cd anushak
+
+C:\anushak\anushak>copy con abc
+this is my first file.^Z
+        1 file(s) copied.
+
+C:\anushak\anushak>edit abc  //ctrl+q to save 
+
+C:\anushak\anushak>copy con xyz.xlsx     //to create a file with its extension name it is .docx 
+^Z
+        1 file(s) copied.
+
+C:\anushak\anushak>ren abc abc1   //to rename the file 
+
+C:\anushak\anushak>del abc1       //to deletethe file 
+
+C:\anushak\anushak>color 06       //background color  font color 
+
+C:\anushak\anushak>color 07
+
+C:\anushak\anushak>color \?
+Sets the default console foreground and background colors.
+
+COLOR [attr]
+
+  attr        Specifies color attribute of console output
+
+Color attributes are specified by TWO hex digits -- the first
+corresponds to the background; the second the foreground.  Each digit
+can be any of the following values:
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+If no argument is given, this command restores the color to what it was
+when CMD.EXE started.  This value either comes from the current console
+window, the /T command line switch or from the DefaultColor registry
+value.
+
+The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
+the COLOR command with a foreground and background color that are the
+same.
+
+Example: "COLOR fc" produces light red on bright white
+
+C:\anushak\anushak>attrib +h xyz
+File not found - xyz
+
+C:\anushak\anushak>attrib +h xyz.xlsx  //h is used for hide command
+C:\anushak\anushak>attrib +h xyz.xlsx
+
+C:\anushak\anushak>attrib -h xyz.xlsx  //to ubnhide 
+
+C:\anushak\anushak>copy con abc1
+^Z
+        1 file(s) copied.
+
+C:\anushak\anushak>attrib +r abc1    //ATTRIB -AATRIBUTES TO use different functions  +r used to read only make any changes it will not be saved error will come    -r is used to write or we can make edits 
+
+C:\anushak\anushak>edit abc1
+
+C:\anushak\anushak>shutdown /s    to shutdown 
+
+
+
+//to copy a file-copy file that is to be copied  destination link or name 
+
