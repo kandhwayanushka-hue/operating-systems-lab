@@ -109,3 +109,19 @@ Enter  first number
 Enter second number
 45
 Sum=68
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ nano evenodd.sh
+#!/bin/bash
+echo "Enter the number"
+read n
+if[$((n%2)) -eq 0]
+then 
+echo "even"
+else
+echo "odd"
+fi                   -- it marks the ending of if statement
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ chmod +x evenodd.sh
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ ./evenodd.sh
+Enter a number
+4
+./evenodd.sh: line 4: [0: command not found
+Odd
