@@ -1,0 +1,111 @@
+Microsoft Windows [Version 10.0.26200.9168]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>wsl --install
+A distribution with the supplied name already exists. Use --name to chose a different name.
+Error code: Wsl/InstallDistro/ERROR_ALREADY_EXISTS
+
+C:\Windows\System32>wsl --install
+A distribution with the supplied name already exists. Use --name to chose a different name.
+Error code: Wsl/InstallDistro/ERROR_ALREADY_EXISTS
+
+C:\Windows\System32>wsl -d Ubuntu
+Provisioning the new WSL instance Ubuntu
+This might take a while...
+Create a default Unix user account: admin_anushka
+New password:
+Retype new password:
+Sorry, passwords do not match.
+passwd: Authentication token manipulation error
+passwd: password unchanged
+warn: `/bin/passwd admin_anushka' failed with status 10. Continuing.
+warn: wrong password given or password retyped incorrectly
+Try again? [y/N] Y
+New password:
+Retype new password:
+Sorry, passwords do not match.
+passwd: Authentication token manipulation error
+passwd: password unchanged
+warn: `/bin/passwd admin_anushka' failed with status 10. Continuing.
+warn: wrong password given or password retyped incorrectly
+Try again? [y/N] y
+New password:
+Retype new password:
+passwd: password updated successfully
+usermod: no changes
+Help improve Ubuntu!
+
+Help us improve Ubuntu features and compatibility by sharing system reports with Canonical.
+Reports are sent anonymously and do not contain any personal data.
+For legal details, please visit: https://ubuntu.com/legal/systems-information-notice
+
+We will save your answer to Windows and will only ask you once.
+
+Would you like to opt-in to platform metrics collection (Y/n)? To see an example of the data collected, enter 'e'.
+[Y/n/e]: y e
+Invalid input (Y/n/e).
+Would you like to opt-in to platform metrics collection (Y/n)? To see an example of the data collected, enter 'e'.
+[Y/n/e]: y
+
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 6.18.33.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Aug 17 09:59:27 UTC 2026
+
+  System load:  0.0                 Processes:             40
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       0
+  Memory usage: 7%                  IPv4 address for eth0: 172.29.71.12
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/admin_anushka/.hushlogin file.
+admin_anushka@LAPTOP-S04K395A:/mnt/c/Windows/System32$
+admin_anushka@LAPTOP-S04K395A:/mnt/c/Windows/System32$ pwd
+/mnt/c/Windows/System32
+admin_anushka@LAPTOP-S04K395A:/mnt/c/Windows/System32$ cd ~
+admin_anushka@LAPTOP-S04K395A:~$ pwd
+/home/admin_anushka
+admin_anushka@LAPTOP-S04K395A:~$ mkdir OSLab
+admin_anushka@LAPTOP-S04K395A:~$ LS
+LS: command not found
+admin_anushka@LAPTOP-S04K395A:~$ ls
+OSLab
+admin_anushka@LAPTOP-S04K395A:~$ cd OSLab
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ pwd
+/home/admin_anushka/OSLab
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ nano first.sh    // shell scripting is done 
+
+a new screen opens where type 
+#!/bin/bash           // she bang 
+echo "Hello World"
+Ctrl+O
+enter
+Ctrl+X
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ ls
+first.sh
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ chmod +x first.sh
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ chmod +x first.sh
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ ./first.sh
+Hello World
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ nano addition.sh
+#!/bin/bash
+echo "Enter First number:"
+read num1
+echo "Enter Second number:"
+read num2
+sum=$((num1+num2))                       -for doing any function we have to put under like this $(( ))
+echo "Sum=$sum"
+Save the file - Ctrl+O
+enter
+Ctrl+X
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ chmod +x addition.sh
+admin_anushka@LAPTOP-S04K395A:~/OSLab$ ./addition.sh
+Enter  first number
+23
+Enter second number
+45
+Sum=68
